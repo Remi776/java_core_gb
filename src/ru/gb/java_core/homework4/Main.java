@@ -6,6 +6,7 @@ package ru.gb.java_core.homework4;
 
 import ru.gb.java_core.homework4.enteties.Customer;
 import ru.gb.java_core.homework4.enteties.Gender;
+import ru.gb.java_core.homework4.enteties.Holidays;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -30,9 +31,9 @@ public class Main {
             if (month == Month.JANUARY && day == 1){
                 System.out.println("С нг, " + customer.getName());
             } else if (month == Month.MARCH && day == 8 && customer.getGender() == Gender.FEMALE) {
-                System.out.println("c 8 марта, " + customer.getName());
+                System.out.println("c, " + Holidays.WOMENS_DAY.getFullName() + customer.getName());
             } else if (month == Month.FEBRUARY && day == 23 && customer.getGender() == Gender.MALE){
-                System.out.println("c 23 февраля, " + customer.getName());
+                System.out.println("c, " + Holidays.DEFENDERS_DAY.getFullName() + customer.getName());
             }
         }
     }
